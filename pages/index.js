@@ -1,5 +1,10 @@
-const Hello = () => function() {
-	return <h1>Hello World!</h1>
-}
+import HLSVideo from "../components/hlsVideo"
 
-export default Hello
+export default function Hello() {
+  return (
+    <div>
+      <h1>HLS Stream</h1>
+      <HLSVideo />
+    </div>
+  )
+}
