@@ -1,10 +1,20 @@
-import HLSVideo from "../components/hlsVideo"
+import Link from 'next/link'
 
-export default function Hello() {
+const VideoLink = props => (
+  <li>
+    <Link href="/hls_stream/[name]" as={`/hls_stream/${props.name}`}>
+      <a>{props.title}</a>
+    </Link>
+  </li>
+)
+
+export default function Index() {
   return (
     <div>
-      <h1>HLS Stream</h1>
-      <HLSVideo />
+      <h1>Play List</h1>
+      <ul>
+        <VideoLink title="Test Title" name="test_stream" />
+      </ul>
     </div>
   )
 }
