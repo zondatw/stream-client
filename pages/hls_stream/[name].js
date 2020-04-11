@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 
+import Layout from '../../components/Layout'
 import HLSVideo from "../../components/HLSVideo"
 
 export default function HLSStream() {
@@ -7,9 +8,8 @@ export default function HLSStream() {
   const { name } = router.query
 
   return (
-    <div>
-      <h1>HLS Stream</h1>
+    <Layout title="HLS Stream">
       <HLSVideo name={name} />
-    </div>
+    </Layout>
   )
 }

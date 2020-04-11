@@ -1,10 +1,10 @@
+import Layout from '../components/Layout'
 import Videos from '../components/Videos'
 
 export default function Index() {
   return (
-    <div>
-      <h1>Play List</h1>
+    <Layout title="Play List">
       <Videos />
-    </div>
+    </Layout>
   )
 }
