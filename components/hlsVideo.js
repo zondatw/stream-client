@@ -1,5 +1,8 @@
 import React from 'react'
+
 import Hls from 'hls.js'
+
+import styles from '../assets/components/HLSVideo.module.css'
 
 export default class HLSVideo extends React.Component {
   constructor(props) {
@@ -26,6 +29,6 @@ export default class HLSVideo extends React.Component {
   }
 
   render() {
-    return <video controls ref={this.videoRef}></video>
+    return <video className={styles.hlsVideo} controls ref={this.videoRef}></video>
   }
 }
