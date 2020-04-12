@@ -1,0 +1,63 @@
+.card {
+  display: grid;
+  grid-template-columns: 40vh;
+  grid-template-rows: 30vh 30vh 10vh;
+  grid-template-areas: "image" "text" "footer";
+
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 15px black;
+  text-align: center;
+}
+
+.cardImg {
+  grid-area: image;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.cardText {
+  grid-area: text;
+  margin: 2vh;
+}
+
+.cardText span {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cardText p {
+  color: gray;
+  font-size: 1rem;
+}
+
+.cardFooter {
+  grid-area: footer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #FF0080;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFooter span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.cardFooter:hover {
+  cursor: pointer;
+  background-color: #D9006C;
+}
+
+.cardFooter:active {
+  border-style: solid;
+  border-color: #FF95CA;
+  border-width: 3%;
+}
