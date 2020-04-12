@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import styles from '../assets/components/VideoCard.module.css'
 
@@ -9,7 +10,8 @@ export default class VideoCard extends React.Component {
   }
 
   componentDidMount() {
-    this.videoCardRef.current.style.backgroundImage = 'url("test.png")'
+    const coverFileUrl = `${window.location.origin}/streams/${this.props.name}/${this.props.coverFile}`
+    this.videoCardRef.current.style.backgroundImage = `url(${coverFileUrl})`
   }
 
   render() {
@@ -17,18 +19,13 @@ export default class VideoCard extends React.Component {
       <div className={styles.card}>
         <div className={styles.cardImg} ref={this.videoCardRef}></div>
         <div className={styles.cardText}>
-          <span>Test Title</span>
-          <p>
-            this is test video.this is test video.this is test video.this is
-            test video.this is test video. this is test video.this is test
-            video.this is test video.this is test video.this is test video.
-            this is test video.this is test video.this is test video.this is
-            test video.this is test video. this is test video.this is test
-            video.this is test video.this is test video.this is test video.
-          </p>
+          <span>{this.props.title}</span>
+          <p>{this.props.description}</p>
         </div>
         <div className={styles.cardFooter}>
-          <span>Watch</span>
+          <Link href="/hls_stream/[name]" as={`/hls_stream/${this.props.name}`}>
+            <span>Watch</span>
+          </Link>
         </div>
       </div>
     )
