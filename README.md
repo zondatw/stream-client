@@ -15,6 +15,11 @@ $ npm run build
 
 # start from build
 $ npm run start
+
+# export
+$ npm run export
+$ cd out
+$ serve -p 8080
 ```
 
 ## Demo
