@@ -24,8 +24,8 @@ $ serve -p 8080
 
 ## Demo
 
-![play list](README_picture/play_list.PNG)  
-![HLS Stream](README_picture/hls_stream.PNG)  
+![play list](README_picture/play_list.png)  
+![HLS Stream](README_picture/hls_stream.png)  
 
 ## Reference
 
