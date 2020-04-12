@@ -1,0 +1,24 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 5px 3%;
+  background-color: #141414;
+  box-shadow: 2px 2px 5px black;
+}
+
+.headerImg {
+  height: 8vh;
+  max-height: 40px;
+  cursor: pointer;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: center;
+}
+
+.headerNav span {
+  font-size: 1.25rem;
+  color: #55f;
+}
