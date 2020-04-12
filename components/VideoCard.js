@@ -22,6 +22,9 @@ export default class VideoCard extends React.Component {
             this is test video.this is test video.this is test video.this is
             test video.this is test video. this is test video.this is test
             video.this is test video.this is test video.this is test video.
+            this is test video.this is test video.this is test video.this is
+            test video.this is test video. this is test video.this is test
+            video.this is test video.this is test video.this is test video.
           </p>
         </div>
         <div className={styles.cardFooter}>

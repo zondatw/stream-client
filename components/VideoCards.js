@@ -8,6 +8,11 @@ export default class Videos extends React.Component {
     return (
       <div className={styles.cardContainer}>
         <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
       </div>
     )
   }
