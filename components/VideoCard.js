@@ -10,7 +10,7 @@ export default class VideoCard extends React.Component {
   }
 
   componentDidMount() {
-    const coverFileUrl = `${window.location.origin}/streams/${this.props.name}/${this.props.coverFile}`
+    const coverFileUrl = `http://localhost:8000/streams/${this.props.name}/${this.props.coverFile}`
     this.videoCardRef.current.style.backgroundImage = `url(${coverFileUrl})`
   }
 

@@ -14,7 +14,7 @@ export default class Videos extends React.Component {
   }
 
   async updateData() {
-    const res = await fetch(`${window.location.origin}/streams/get_video_list`)
+    const res = await fetch("http://localhost:8000/streams/get_video_list")
     const apiData = await res.json()
     this.setState({ data: apiData })
   }

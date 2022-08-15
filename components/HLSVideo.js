@@ -24,7 +24,7 @@ export default class HLSVideo extends React.Component {
   }
 
   componentDidMount() {
-    this.videoUrl = `${window.location.origin}/streams/${this.props.name}/stream.m3u8`
+    this.videoUrl = `http://localhost:8000/streams_m3u8/${this.props.name}/`
     this.init_video(this.videoRef.current, this.videoUrl)
   }
 
